@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    <div class="login-container">
+    <div class="container">
+        <h1>ToDO's</h1>
         <h2>Login</h2>
         <% if (locals.messages.errors) { %>
             <% messages.errors.forEach( el => { %>
@@ -22,7 +23,7 @@
                 <div class="alert alert-danger"><%= el.msg %></div>
             <% }) %>    
         <% } %>
-        <form action="/login" method="POST">
+        <form class="login-form" action="/login" method="POST">
             <input type="email" name="email" placeholder="Email">
             <input type="password" name="password" placeholder="Password">
             <input type="submit">

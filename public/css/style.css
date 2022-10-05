@@ -10,13 +10,16 @@ a {
     font-weight: bold;
 }
 
+a:hover {
+    color: white;
+}
+
 html {
     font-family: sans-serif;
 }
 
 body {
     min-height: 100vh;
-    padding: 10px;
     display: flex;
     align-items: center;
     background-color: rgb(238, 234, 228);
@@ -34,16 +37,32 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/********************* ToDOso Styles  **********************/
-.container {
-    background: #D1E2FF;
+p {
+    margin: 1px 0;
+    text-align: center;
+}
 
+.container {
+    position: relative;
+    background: #D1E2FF;
     max-width: 600px;
+    min-height: 250px;
     margin: 0 auto;
     padding: 50px;
     border-radius: 10px;
 }
 
+
+.auth-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.auth-buttons a {
+    margin-right: 5px;
+}
+/********************* ToDOso Styles  **********************/
 .list-container {
     max-width: 400px;
     margin: 50px auto;
@@ -81,7 +100,7 @@ input[type="checkbox"] {
     margin: 20px;
 }
 
-p {
+li p {
     margin: 0;
     padding: 20px;
     transition: background 0.2s;
@@ -118,9 +137,35 @@ p {
    text-decoration: none; 
 }
 
-/*********************  Index Styles ********************* /
-
-/*********************  Login Styles ********************* /
+/*********************  Index Styles *********************/
 
 
-/*********************  SignUp Styles ********************* /
+/*********************  Login Styles *********************/
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-form input {
+    margin: 5px 0;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #D1E2FF;
+    color: white;
+}
+/*********************  SignUp Styles *********************/
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.signup-form input {
+    margin: 5px 0;
+}
+
+.signup-form input[type="submit"]:hover {
+    background-color: #D1E2FF;
+    color: white;
+}
