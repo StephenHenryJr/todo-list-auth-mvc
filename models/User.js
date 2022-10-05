@@ -1,6 +1,7 @@
 const bcrypt = require('bcrypt')
 const mongoose = require('mongoose')
 
+// The result of this will create a document in our DB with this schema
 const UserSchema = new mongoose.Schema({
   userName: { type: String, unique: true },
   email: { type: String, unique: true },
@@ -9,7 +10,7 @@ const UserSchema = new mongoose.Schema({
 
 
 // Password hash middleware.
- 
+// use this ot encrypt your passwords in our DB
  UserSchema.pre('save', function save(next) {
   const user = this
   if (!user.isModified('password')) { return next() }

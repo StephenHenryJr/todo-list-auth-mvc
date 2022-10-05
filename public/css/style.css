@@ -1,10 +1,126 @@
-h1{
-    color: red;
+/********************* Base Styles  **********************/
+ * {
+    margin: 0;
+    font-size: 16px;
+    color: #353238;
 }
-.completed{
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(238, 234, 228);
+}
+
+
+h1 {
+    font-size: 5rem;
+    margin: 20px;
+    text-shadow: 10px 10px 0 rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+}
+
+/********************* ToDOso Styles  **********************/
+.container {
+    background: #D1E2FF;
+
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.list-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    padding: 0;
+    text-align: left;
+    list-style: none;
+}
+
+ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    border-bottom: 1px solid #F1F1F1;
+    display: flex;
+    align-items: baseline;
+}
+
+input {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.05);
+}
+
+input:checked+p {
     text-decoration: line-through;
-    color: gray;
 }
-.not{
-    text-decoration: underline;
+
+input[type="checkbox"] {
+    margin: 20px;
 }
+
+p {
+    margin: 0;
+    padding: 20px;
+    transition: background 0.2s;
+    /* flex: 1; */
+    font-family: 'helvetica neue';
+    font-size: 20px;
+    font-weight: 200;
+    border-left: 1px solid #D1E2FF;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 10px auto;
+    /* position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0; */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: #0B5CC8;
+}
+
+.todoItem:last-child {
+    border-bottom: 0;
+}
+
+.fa-trash-can {
+    color: rgb(171, 12, 12);
+}
+
+.logout > span {
+   text-decoration: none; 
+}
+
+/*********************  Index Styles ********************* /
+
+/*********************  Login Styles ********************* /
+
+
+/*********************  SignUp Styles ********************* /

@@ -37,10 +37,12 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 app.use(flash())
-  
+ 
+// If you hear something making a request on these routes, use the following routes
 app.use('/', mainRoutes)
 app.use('/todos', todoRoutes)
  
 app.listen(process.env.PORT, ()=>{
     console.log('Server is running, you better catch it!')
-})    
+})
+    
